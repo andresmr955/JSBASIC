@@ -1,13 +1,14 @@
 function solution(estudiantes, deathCount, nuevo) {
-  // Tu código aquí 👈
-    var arrayReturn = [1,2,3];
-        if(deathCount === 0){
-            estudiantes.push(nuevo);
-        }else(deathCount > 0){
-            for(let = i; estudiantes.length < deathCount;i++)
-        }
-        
-        return estudiantes
-        
-    
-}
+    if (deathCount === 0) {
+      estudiantes.push(nuevo);
+    } else {
+      // Si deathCount es mayor que 0, elimina deathCount elementos desde el final del array
+      while (deathCount > 0 && estudiantes.length > 0) {
+        estudiantes.pop();
+        deathCount--;
+      }
+      estudiantes.push(nuevo); // Agrega nuevo después de eliminar elementos
+    }
+    return estudiantes;
+  }
+  
