@@ -7,11 +7,11 @@
 // à l'intérieur de ces accolades. Voici un exemple simple d'un objet JavaScript :
 
 const personne = {
-    nom: "Jean",
-    âge: 30,
-    profession: "Développeur",
-    saluer: function() {
-      console.log(`Bonjour, je m'appelle ${this.nom} et j'ai ${this.âge} ans.`);
-    }
-  };
-  
+  nom: "Jean",
+  âge: 30,
+  profession: "Développeur",
+  saluer: function() {
+    console.log(`Bonjour, je m'appelle ${this.nom} et j'ai ${this.âge} ans.`);
+  }
+};
+                                                                                                                                                             
